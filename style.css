@@ -1,0 +1,4 @@
+p: hover, button: hover {cursor: pointer;}
+input, button {display: block; margin-bottom: 10px;}
+button {color: white; background-color: maroon;}
+#header {color: maroon;}
