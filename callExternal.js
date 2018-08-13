@@ -32,15 +32,15 @@ document.getElementById('list').onclick=function(){sniffer('list')};
 		document.getElementById('activator').onclick=function(){alert('This is what you ordered: ')};
 
 		function numCheck() {
-		var myNum = "Holiday Harry";
-		var result = isNaN(myNum);
-		console.log(result);
-}
+			var myNum = "Holiday Harry";
+			var result = isNaN(myNum);
+			console.log(result);
+		}
 
 		function intCheck() {
-		var myNum = "42 natural gas units";
-		var result = parseInt(myNum);
-		console.log(result);
-		console.log(result + 42);
-		console.log(myNum + 42);
-}
+			var myNum = "42 natural gas units";
+			var result = parseInt(myNum);
+			console.log(result);
+			console.log(result + 42);
+			console.log(myNum + 42);
+		}
