@@ -29,38 +29,29 @@ function nameFunc(x) {
 	document.getElementById('pageLoad').onload=function(){alert('Page Loading...')};
 
 
-	function superCheck(result) {
+	function superCheck() {
 
 		function numCheck() {
-			var myNum = "Holiday Harry";
+			var myNum = 55;
 			var result = isNaN(myNum);
 			console.log(result);
 		}
 
 
 
-		document.getElementById('activator').onclick=function(){numCheck();}
-
-
-
-
-		function intCheck() {
-			var myNum = "42 natural gas units";
-			var result = parseInt(myNum);
-			console.log(result);
-
-			// console.log(result + 42);
-			// console.log(myNum + 42);
-
-		}
-
 		
 
-		if(result === false) {
-			alert("foolish believer in objects!");
-		}
-		else
-		{
-			alert("Nothing here in the cigar smoke but these numbers: " + result);
-		}
+if(result === false) {
+
+		alert("foolish believer in objects! Here's the number: " + myNum);
+} else {
+
+	
+	alert( "Here are you're words instead:" +" "+ myNum + " and their number: ");
+}
+
+
+document.getElementById('activator').onclick=function(){superCheck();}
+	
 	}
+	
