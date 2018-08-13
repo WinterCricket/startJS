@@ -4,6 +4,10 @@
 // 	alert("called: outside() function");
 // }
 
+var  email = "johnny@psight.com";
+
+var theAt = email.indexOf("@");
+console.log(theAt);
 
 function sniffer(message) {
 	console.log("You have clicked " + message);
@@ -14,8 +18,7 @@ function sniffer(message) {
 document.getElementById('header').onclick=function(){sniffer('header')};
 	document.getElementById('pGraph').onclick=function(){sniffer('paragraphs')};
 	document.getElementById('list').onclick=function(){sniffer('list')};
-	document.getElementById('butt').onclick=function(){sniffer('button')};
-// 
+	// document.getElementsByTagName('button').onclick=function(){sniffer('button')};
 
 function nameFunc(x) {
  	x.style.background = "yellow";}
@@ -26,4 +29,4 @@ function nameFunc(x) {
 	 document.getElementById('pageLoad').onload=function(){alert('Page Loading...')};
 	
 	
-	
+ document.getElementById('activator').onclick=function(){alert('This is what you ordered: ')};
