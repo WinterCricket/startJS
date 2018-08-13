@@ -18,7 +18,7 @@ function sniffer(message) {
 document.getElementById('header').onclick=function(){sniffer('header')};
 document.getElementById('pGraph').onclick=function(){sniffer('paragraphs')};
 document.getElementById('list').onclick=function(){sniffer('list')};
-	// document.getElementsByTagName('button').onclick=function(){sniffer('button')};
+document.getElementById('butt').onclick=function(){sniffer('button')};
 
 	function nameFunc(x) {
 		x.style.background = "yellow";}
@@ -29,7 +29,7 @@ document.getElementById('list').onclick=function(){sniffer('list')};
 		document.getElementById('pageLoad').onload=function(){alert('Page Loading...')};
 
 
-		document.getElementById('activator').onclick=function(){alert('This is what you ordered: ')};
+		
 
 		function numCheck() {
 			var myNum = "Holiday Harry";
@@ -41,6 +41,9 @@ document.getElementById('list').onclick=function(){sniffer('list')};
 			var myNum = "42 natural gas units";
 			var result = parseInt(myNum);
 			console.log(result);
-			console.log(result + 42);
-			console.log(myNum + 42);
+			// console.log(result + 42);
+			// console.log(myNum + 42);
+
 		}
+
+		document.getElementById('activator').onclick=function(){intCheck();}
