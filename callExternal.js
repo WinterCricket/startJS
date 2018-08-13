@@ -31,11 +31,11 @@ function nameFunc(x) {
 
 	function superCheck() {
 
-		function numCheck() {
+		
 			var myNum = 55;
 			var result = isNaN(myNum);
 			console.log(result);
-		}
+		
 
 
 
@@ -49,9 +49,9 @@ if(result === false) {
 	
 	alert( "Here are you're words instead:" +" "+ myNum + " and their number: ");
 }
-
+}
 
 document.getElementById('activator').onclick=function(){superCheck();}
 	
-	}
+	
 	
