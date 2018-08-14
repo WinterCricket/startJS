@@ -4,10 +4,10 @@
 // 	alert("called: outside() function");
 // }
 
-var  email = "johnny@psight.com";
+// var  email = "johnny@psight.com";
 
-var theAt = email.indexOf("@");
-console.log(theAt);
+// var theAt = email.indexOf("@");
+// console.log(theAt);
 
 function sniffer(message) {
 	console.log("You have clicked " + message);
@@ -20,13 +20,13 @@ document.getElementById('pGraph').onclick=function(){sniffer('paragraphs')};
 document.getElementById('list').onclick=function(){sniffer('list')};
 document.getElementById('butt').onclick=function(){sniffer('button')};
 
-function nameFunc(x) {
-	x.style.background = "yellow";}
+// function nameFunc(x) {
+// 	x.style.background = "yellow";}
 
-	document.getElementsByTagName('input').onfocusin=function(){nameFunc(this)};
+// 	document.getElementsByTagName('input').onfocusin=function(){nameFunc(this)};
 
 
-	document.getElementById('pageLoad').onload=function(){alert('Page Loading...')};
+	// document.getElementById('pageLoad').onload=function(){alert('Page Loading...')};
 
 
 	function superCheck() {
@@ -70,3 +70,20 @@ function nameFunc(x) {
 	
 	
 	document.getElementById('activator').onclick=function(){runNext();}
+
+	 function runMail() {
+
+		var typing = document.getElementById('email').innerHTML;
+		
+		var result = typing.indexOf('@');
+		console.log(result);
+
+		if(result != -1) {
+			console.log("Result: " + result);
+			console.log(true);
+		} else {
+			console.log("Result: " + result);
+			console.log(false);
+		}
+
+	 document.getElementById('ebutton').onclick=function(){runMail();}
