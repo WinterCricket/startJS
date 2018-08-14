@@ -51,7 +51,20 @@ function nameFunc(x) {
 		}
 	}
 
-	document.getElementById('activator').onclick=function(){superCheck();}
+	
+
+
+	function runNext() {
+
+		var target = document.getElementById("next");
+		var currentVal = target.innerHTML;
+		console.log(currentVal);
+
+		// if(currentVal<3) {
+
+		// }
+
+	}
 	
 	
-	
+	document.getElementById('activator').onclick=function(){runNext();}
