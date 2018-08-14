@@ -32,26 +32,26 @@ function nameFunc(x) {
 	function superCheck() {
 
 		
-			var myNum = 55;
-			var result = isNaN(myNum);
-			console.log(result);
+		var myNum = "If this is true";
+		var result = isNaN(myNum);
+		console.log(result);
 		
 
 
 
 		
 
-if(result === false) {
+		if(result === false) {
 
-		alert("foolish believer in objects! Here's the number: " + myNum);
-} else {
+			alert("foolish believer in objects! Here's the number: " + myNum);
+		} else {
 
-	
-	alert( "Here are you're words instead:" +" "+ myNum + " and their number: ");
-}
-}
 
-document.getElementById('activator').onclick=function(){superCheck();}
+			alert( "Here are you're words instead:" +" "+ myNum + " and this is their number: " + myNum.length);
+		}
+	}
+
+	document.getElementById('activator').onclick=function(){superCheck();}
 	
 	
 	
