@@ -58,11 +58,13 @@ function nameFunc(x) {
 
 		var target = document.getElementById("next");
 		var currentVal = target.innerHTML;
-		console.log(currentVal);
+		var numVal = currentVal.length;
 
-		// if(currentVal<3) {
-
-		// }
+		if(numVal<50) {
+			target.innerHTML = "There were fewer than 50 spaces in that paragraph.";
+		} else {
+			target.innerHTML = "Silly Wizard, dirty tricks are for kids! That was a long graph.";
+		}
 
 	}
 	
