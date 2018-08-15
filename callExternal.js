@@ -94,8 +94,10 @@ function repeatIt() {
 	var loopCount = 5;
 	while (loopCount > 0) {
 		alert("The count is now: " + loopCount);
+		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
 	}
 	alert("You're foolish counting has stopped.");
+	console.log("You're foolish counting has stopped.");
 }
-repeatIt();
+document.getElementById('leCount').onclick=function(){repeatIt();}
