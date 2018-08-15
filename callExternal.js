@@ -93,9 +93,16 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 function repeatIt() {
 	var loopCount = 5;
 	while (loopCount > 0) {
+
+		if(loopCount == 3) {
+			alert("You've hit magic number " + loopCount);
+			loopCount = loopCount -1;
+		} else {
+
 		alert("The count is now: " + loopCount);
 		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
+		}
 	}
 	alert("Your foolish counting has stopped.");
 	console.log("Your foolish counting has stopped.");
