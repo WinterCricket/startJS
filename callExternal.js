@@ -54,36 +54,38 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 	
 
 
-	function runNext() {
+	// function runNext() {
 
-		var target = document.getElementById("next");
-		var currentVal = target.innerHTML;
-		var numVal = currentVal.length;
+	// 	var target = document.getElementById("next");
+	// 	var currentVal = target.innerHTML;
+	// 	var numVal = currentVal.length;
 
-		if(numVal<50) {
-			target.innerHTML = "There were fewer than 50 spaces in that paragraph.";
-		} else {
-			target.innerHTML = "Silly Wizard, dirty tricks are for kids! That was a long graph.";
-		}
+	// 	if(numVal<50) {
+	// 		target.innerHTML = "There were fewer than 50 spaces in that paragraph.";
+	// 	} else {
+	// 		target.innerHTML = "Silly Wizard, dirty tricks are for kids! That was a long graph.";
+	// 	}
 
-	}
+	// }
 	
 	
-	document.getElementById('activator').onclick=function(){runNext();}
+	// document.getElementById('activator').onclick=function(){runNext();}
 
-	 function runMail() {
+	 function runStr() {
 
-		var typing = document.getElementById('email').innerHTML;
+
+		var str = "meldrem@shit.com";
 		
-		var result = typing.indexOf('@');
+		var result = str.indexOf('@');
 		console.log(result);
 
-		if(result != -1) {
-			console.log("Result: " + result);
+		if (result != -1) {
+			console.log("Result: " + result + " " + str);
 			console.log(true);
 		} else {
-			console.log("Result: " + result);
+			console.log("Result: " + result + " " + str);
 			console.log(false);
 		}
-
-	 document.getElementById('ebutton').onclick=function(){runMail();}
+	}
+ document.getElementById('ebutton').onclick=function(){runStr();}
+//document.getElementById('activator').onclick=function(){runStr();}
