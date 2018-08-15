@@ -100,4 +100,8 @@ function repeatIt() {
 	alert("Your foolish counting has stopped.");
 	console.log("Your foolish counting has stopped.");
 }
-document.getElementById('leCount').onclick=function(){repeatIt();}
+document.getElementById('leCount').onclick=function(){
+	repeatIt(); 
+	document.getElementById('leCount').innerHTML = "Stop";
+	this.style.background = "red";
+}
