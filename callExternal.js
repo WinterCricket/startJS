@@ -97,7 +97,7 @@ function repeatIt() {
 		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
 	}
-	alert("You're foolish counting has stopped.");
-	console.log("You're foolish counting has stopped.");
+	alert("Your foolish counting has stopped.");
+	console.log("Your foolish counting has stopped.");
 }
 document.getElementById('leCount').onclick=function(){repeatIt();}
