@@ -94,12 +94,14 @@ function repeatIt() {
 	var loopCount = 5;
 	while (loopCount > 0) {
 
+		var countlist = document.getElementById('countlist');
+		countlist.innerHTML = "Count: " + loopCount + "<br>"+ countlist.innerHTML;
 		if(loopCount == 3) {
 			alert("You've hit magic number " + loopCount);
 			loopCount = loopCount -1;
 		} else {
 
-		alert("The count is now: " + loopCount);
+		
 		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
 		}
@@ -112,3 +114,6 @@ document.getElementById('leCount').onclick=function(){
 	document.getElementById('leCount').innerHTML = "Stop";
 	this.style.background = "red";
 }
+
+
+
