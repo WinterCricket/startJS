@@ -93,20 +93,25 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 function repeatIt() {
 	var loopCount = 5;
 	while (loopCount > 0) {
+		/* 
+			put var countlist and innerHTML stuff 
+			here to put on page more than goes into console instead.
+			3 will be on page list, not on console list.
+		*/
 
-		var countlist = document.getElementById('countlist');
-		countlist.innerHTML = "Count: " + loopCount + "<br>"+ countlist.innerHTML;
 		if(loopCount == 3) {
 			alert("You've hit magic number " + loopCount);
 			loopCount = loopCount -1;
 		} else {
 
-		
+		var countlist = document.getElementById('countlist');
+		countlist.innerHTML = "Count: " + loopCount + "<br>"+ countlist.innerHTML;
 		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
 		}
 	}
 	alert("Your foolish counting has stopped.");
+	// countlist.innerHTML = "Your foolish counting has stopped.";
 	console.log("Your foolish counting has stopped.");
 }
 document.getElementById('leCount').onclick=function(){
