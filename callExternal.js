@@ -54,38 +54,48 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 	
 
 
-	// function runNext() {
+	function runNext() {
 
-	// 	var target = document.getElementById("next");
-	// 	var currentVal = target.innerHTML;
-	// 	var numVal = currentVal.length;
+		var target = document.getElementById("next");
+		var currentVal = target.innerHTML;
+		var numVal = currentVal.length;
 
-	// 	if(numVal<50) {
-	// 		target.innerHTML = "There were fewer than 50 spaces in that paragraph.";
-	// 	} else {
-	// 		target.innerHTML = "Silly Wizard, dirty tricks are for kids! That was a long graph.";
-	// 	}
-
-	// }
-	
-	
-	// document.getElementById('activator').onclick=function(){runNext();}
-
-	 function runStr() {
-
-
-		var str = "meldrem@shit.com";
-		
-		var result = str.indexOf('@');
-		console.log(result);
-
-		if (result != -1) {
-			console.log("Result: " + result + " " + str);
-			console.log(true);
+		if(numVal<50) {
+			target.innerHTML = "There were fewer than 50 spaces in that paragraph.";
 		} else {
-			console.log("Result: " + result + " " + str);
-			console.log(false);
+			target.innerHTML = "Silly Wizard, dirty tricks are for kids! That was a long graph.";
 		}
+
 	}
- document.getElementById('ebutton').onclick=function(){runStr();}
+	
+	
+	document.getElementById('activator').onclick=function(){runNext();}
+
+	//  function runStr() {
+
+
+	// 	var str = "meldrem@shit.com";
+		
+	// 	var result = str.indexOf('@');
+	// 	console.log(result);
+
+	// 	if (result != -1) {
+	// 		console.log("Result: " + result + " " + str);
+	// 		console.log(true);
+	// 	} else {
+	// 		console.log("Result: " + result + " " + str);
+	// 		console.log(false);
+	// 	}
+	// }
+ // document.getElementById('ebutton').onclick=function(){runStr();}
 //document.getElementById('activator').onclick=function(){runStr();}
+
+function repeatIt() {
+	var loopCount = 5;
+	while (loopCount > 0) {
+		alert("The count is now: " + loopCount);
+		loopCount = loopCount -1;
+	}
+	alert("You're foolish counting has stopped.");
+}
+repeatIt();
