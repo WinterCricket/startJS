@@ -91,15 +91,16 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 //document.getElementById('activator').onclick=function(){runStr();}
 
 function repeatIt(message) {
-	var loopCount = 5;
-	while (loopCount > 0) {
+	
+	for( var i = 10; i >= 0; i--) { 
 
 		
 
 		var target = document.getElementById('target');
-		target.innerHTML = "Count: " + loopCount + "<br>"+ target.innerHTML;
-		console.log("The count is now: " + loopCount);
-		loopCount = loopCount -1;
+		target.innerHTML = "Count: " + i + "<br>"+ target.innerHTML;
+		console.log("The damned, self important count is now: " + i);
+		
+
 	}
 
 	
