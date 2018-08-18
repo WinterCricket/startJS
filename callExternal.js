@@ -75,7 +75,7 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 
 
 	// 	var str = "meldrem@shit.com";
-		
+
 	// 	var result = str.indexOf('@');
 	// 	console.log(result);
 
@@ -90,35 +90,32 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
  // document.getElementById('ebutton').onclick=function(){runStr();}
 //document.getElementById('activator').onclick=function(){runStr();}
 
-function repeatIt() {
+function repeatIt(message) {
 	var loopCount = 5;
 	while (loopCount > 0) {
-		/* 
-			put var countlist and innerHTML stuff 
-			here to put on page more than goes into console instead.
-			3 will be on page list, not on console list.
-		*/
 
-		if(loopCount == 3) {
-			alert("You've hit magic number " + loopCount);
-			loopCount = loopCount -1;
-		} else {
+		
 
-		var countlist = document.getElementById('countlist');
-		countlist.innerHTML = "Count: " + loopCount + "<br>"+ countlist.innerHTML;
+		var target = document.getElementById('target');
+		target.innerHTML = "Count: " + loopCount + "<br>"+ target.innerHTML;
 		console.log("The count is now: " + loopCount);
 		loopCount = loopCount -1;
-		}
 	}
-	alert("Your foolish counting has stopped.");
-	// countlist.innerHTML = "Your foolish counting has stopped.";
+
+	
+
 	console.log("Your foolish counting has stopped.");
+	var button = document.getElementById('leCount');
+	button.value = "Count Done!";
+	button.style.background = "red";
+	button.style.fontSize = "34px";
+
 }
-document.getElementById('leCount').onclick=function(){
+ document.getElementById('leCount').onclick=function(){
 	repeatIt(); 
-	document.getElementById('leCount').innerHTML = "Stop";
-	this.style.background = "red";
-}
+// 	document.getElementById('leCount').innerHTML = "Stop";
+// 	this.style.background = "red";
+ }
 
 
 
