@@ -112,11 +112,38 @@ function repeatIt(message) {
 	button.style.fontSize = "34px";
 
 }
- document.getElementById('leCount').onclick=function(){
+document.getElementById('leCount').onclick=function(){
 	repeatIt(); 
 // 	document.getElementById('leCount').innerHTML = "Stop";
 // 	this.style.background = "red";
- }
+}
+
+
+alert(document.title);
 
 
 
+
+function snacksList() {
+
+	var snacks = ["apple", "papaya", "crackers", "sardines"];
+	
+	
+	
+	// var list = snacks.sort();
+	for (var i = 0; snacks.length < 0; i++) {
+
+		var food = document.getElementById('food');
+		food.innerHTML = food.innerHTML + "Snack: " + snacks[i] + "<br>";
+		
+	}
+
+	console.log("Your foolish snacks are packed, you brat!.");
+	var button = document.getElementById('box');
+	button.value = "Snacks Boxed!";
+	button.style.background = "green";
+	button.style.fontSize = "60px";
+}
+document.getElementById('box').onclick=function(){
+	snacksList(); 
+}
