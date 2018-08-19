@@ -91,12 +91,11 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 //document.getElementById('activator').onclick=function(){runStr();}
 
 function repeatIt(message) {
-	
-	for( var i = 10; i >= 0; i--) { 
+for(let i = 10; i >= 0; i--) { 
 
 		
 
-		var target = document.getElementById('target');
+		const target = document.getElementById('target');
 		target.innerHTML = "Count: " + i + "<br>"+ target.innerHTML;
 		console.log("The damned, self important count is now: " + i);
 		
@@ -106,7 +105,7 @@ function repeatIt(message) {
 	
 
 	console.log("Your foolish counting has stopped.");
-	var button = document.getElementById('leCount');
+	const button = document.getElementById('leCount');
 	button.value = "Count Done!";
 	button.style.background = "red";
 	button.style.fontSize = "34px";
