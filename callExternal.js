@@ -91,11 +91,11 @@ document.getElementById('butt').onclick=function(){sniffer('button')};
 //document.getElementById('activator').onclick=function(){runStr();}
 
 function repeatIt(message) {
-for(let i = 10; i >= 0; i--) { 
+for(var i = 10; i >= 0; i--) { 
 
 		
 
-		const target = document.getElementById('target');
+		var target = document.getElementById('target');
 		target.innerHTML = "Count: " + i + "<br>"+ target.innerHTML;
 		console.log("The damned, self important count is now: " + i);
 		
@@ -105,7 +105,7 @@ for(let i = 10; i >= 0; i--) {
 	
 
 	console.log("Your foolish counting has stopped.");
-	const button = document.getElementById('leCount');
+	var button = document.getElementById('leCount');
 	button.value = "Count Done!";
 	button.style.background = "red";
 	button.style.fontSize = "34px";
@@ -123,17 +123,18 @@ alert(document.title);
 
 
 
-function snacksList() {
+function snacksList(message) {
 
 	var snacks = ["apple", "papaya", "crackers", "sardines"];
 	
 	
 	
 	// var list = snacks.sort();
-	for (var i = 0; snacks.length < 0; i++) {
+	for (var i = 0; i < snacks.length; i++) {
 
 		var food = document.getElementById('food');
-		food.innerHTML = food.innerHTML + "Snack: " + snacks[i] + "<br>";
+		food.innerHTML = food.innerHTML + "Snack: " += food[i] + "<br>";
+
 		
 	}
 
